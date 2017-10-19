@@ -55,9 +55,9 @@ class PrimeiroDiaFragment : Fragment() {
         val horario3 = ArrayList<String>()
         horario3.add("Evento: Apresentação Cultural: Dança do cubo - Alunos da Escola de Educação Básica Municipal Reinaldo Kruger\nLocal: Auditório")
         val horario4 = ArrayList<String>()
-        horario4.add("Evento: Mesa Redonda\nTema: A matemática nas diferentes áreas de formação\nLocal: Auditório")
+        horario4.add("Evento: Mesa Redonda\nTema: A matemática nas diferentes áreas de formação\nPalestrantes:Denilson Fagundes Barbosa(IFSC Canoinhas)\nAryane Spadotto(IFSC Canoinhas)\nSullien Miranda Ribeiro Bravin(IFSC Canoinhas)\nMaiara Soares Fragoso(Acadêmica de Tecnologia em Alimentos)\nDaniele Barão DalComuni(Acadêmica de Tecnologia em Alimentos)\nLocal: Auditório")
         val horario5 = ArrayList<String>()
-        horario5.add("Evento: Palestra\nTema:Implantação do Sistema de Redução Energia Elétrica no Câmpus Canoinhas\nLocal: Auditório")
+        horario5.add("Evento: Palestra\nTema:Implantação do Sistema de Redução Energia Elétrica no Câmpus Canoinhas\nPalestrante: Rafael Nilson Rodrigues(IFSC Florianópolis)\nLocal: Auditório")
         listDataChild.put(listDataHeader[0], horario1) // Header, Child data
         listDataChild.put(listDataHeader[1], horario2)
         listDataChild.put(listDataHeader[2], horario3) // Header, Child data
