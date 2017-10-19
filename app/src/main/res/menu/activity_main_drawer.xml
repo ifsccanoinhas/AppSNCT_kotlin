@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Página inicial" />
+        <item android:title="Evento">
+            <menu>
+                <item
+                    android:id="@+id/nav_palestrantes"
+                    android:icon="@drawable/ic_group_black_24dp"
+                    android:title="Palestrantes" />
+                <item
+                    android:id="@+id/nav_inscricoes"
+                    android:icon="@drawable/ic_person_add_black_24dp"
+                    android:title="Inscrições" />
+                <item
+                    android:id="@+id/nav_programacao"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="Programação" />
+                <item
+                    android:id="@+id/nav_local"
+                    android:icon="@drawable/ic_place_black_24dp"
+                    android:title="Local" />
+
+            </menu>
+        </item>
+    </group>
+
+
+    <item android:title="Informações adicionais">
+        <menu>
+            <item
+                android:id="@+id/nav_sobreEvento"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Sobre o evento" />
+            <item
+                android:id="@+id/nav_sobreAplicativo"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Sobre o aplicativo" />
+        </menu>
+    </item>
+
+</menu>

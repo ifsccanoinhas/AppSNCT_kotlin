@@ -1,0 +1,129 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context="com.devifsc.estagiario.appeventos.IHC.SobreSimposioFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="II Simpósio de Humanidades - IFSC"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    O II Simpósio de Humanidades do IFSC Campus Canoinhas propõe o debate sobre a educação no Brasil e seus desafios para a formação de sujeitos críticos, chamando uma discussão entre o mundo do trabalho, a Sociedade Civil Organizada e as Políticas Públicas para Educação no Brasil, com ênfase nas possibilidades e nos desafios relacionados ao fortalecimento de práticas democráticas, ao desenvolvimento regional socialmente referenciado, inclusivo e de respeito à diversidade cultural, geracional, étnica, de gênero e orientação e de relações sustentáveis com o meio ambiente dentro do ambiente escolar."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Produção:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Canoinhas\nNEABI, NuCA E Grupo de Pesquisa Identidade, Desenvolvimento e Democracia"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Comissão Organizadora:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Joel José de Souza\n
+    Mauro Antônio do Nascimento\n
+    Roberta Costa Ribeiro da Silva\n
+    Ana Cláudia Burmester\n
+    Hendrie Ferreira Nunes\n
+    Patrícia Maccarini Moraes\n
+    Alice Felisbino Golin\n
+    Micheline Raquel de Barros\n
+    Marilde Salomon Ruppel\n
+    Vilson Cesar Schenato\n
+    Marcia Tiemy Morita Kawamoto\n
+    Rafael Mauricio Castanho\n
+    Davis Moreira Alvim\n
+    Iara Inês do Prado Gresczeschen\n
+    Osvaldo Bail\n
+    Argos Gumbowsky"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Instituições Parceiras:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="
+    Universidade do Contestado (UNC),\n
+    Projeto Territórios de Cidadania (NEDET),\n
+    Sindicato dos Trabalhadores em Educação na Rede Pública de Ensino do Estado de SC (SINTE),\n
+    Sindicato dos Trabalhadores na Agricultura Familiar do Planalto Norte (SINTRAF/PN),\n
+    Gerência estadual de Educação."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="0dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
