@@ -14,7 +14,7 @@ import java.util.HashMap
 /**
  * A simple [Fragment] subclass.
  */
-class SegundoDiaFragment : Fragment() {
+class SegundoDiaFragment : Fragment() {//Segundo Dia OK
 
     internal lateinit var listAdapter: ExpandableListAdapter
     internal lateinit var expListView: ExpandableListView
@@ -40,30 +40,33 @@ class SegundoDiaFragment : Fragment() {
         listDataHeader = ArrayList<String>()
         listDataChild = HashMap<String, List<String>>()
         // Adding child data
-        listDataHeader.add("08:30 - 11:45") // manhã
+        listDataHeader.add("08:15 - 12:00") // manhã
         listDataHeader.add("13:30 - 17:00") // tarde
         listDataHeader.add("18:45 - 22:00") // noite
         // Adding child data
         val horario1 = ArrayList<String>() // eventos manhã
         horario1.add("Evento: Apresentações e socialização de trabalhos e projetos desenvolvidos nas escolas municipais, estaduais e no IFSC Câmpus Canoinhas\nLocal: Auditório")
-        horario1.add("Evento: Oficina\nTema: Criptografia Simples\nResponsável: Profª Carla\nLocal: Sala 05")
-        horario1.add("Evento: Oficina\nTema: GPS - Curiosidades e facilidades para a agricultura\nResponsável: Prof Lauro\nLocal: Sala 11")
-        horario1.add("Evento: Oficina\nTema: Construção do pluviômetro e aproveitamento de água da chuva\nResponsável: Prof Jefferson Schick\nLocal: Sala 15")
-        horario1.add("Evento: Oficina\nTema: Cálculo de traços de concreto\nResponsável: Profª Rosângela\nLocal: Laboratório de solos")
-        horario1.add("Evento: Oficina\nTema: A ciência do bem-estar na vida prática\nResponsável: Profª Maressa\nLocal: Sala 24")
-        horario1.add("Evento: Oficina\nTema: Montagem caseira de minhocário\nResponsável: Alunos de agroecologia\nLocal: Sala 01")
-        horario1.add("Evento: Oficina\nTema: Preparo de microrganismos eficazes\nResponsável: Alunos de agroecologia\nLocal: Laboratório de produção vegetal")
-        horario1.add("Evento: Oficina\nTema: Replantio de verduras\nResponsável: Alunos de agroecologia\nLocal: Sala 02")
-        horario1.add("Evento: Oficina\nTema: Produção de cerveja artesanal (1ª parte)\nRestrição: Exclusiva para maiores de 18 anos\nResponsável: Prof Joel Souza\nLocal: Sala 14 e Laboratório de panificação")
+        horario1.add("Evento: Oficina\nTema: Criptografia Simples\nResponsável: Profª Carla\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: GPS - Curiosidades e facilidades para a agricultura\nResponsável: Prof Lauro\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Entenda sua conta de luz usando a matemática\nResponsável: Prof. Everto Follador e Profª Barbara Prust\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Scratch – Ensino de programação para crianças\nResponsável: Fernanda Machado Belem e João Paulo Zorek\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Construção do pluviômetro e aproveitamento de água da chuva\nResponsável: Prof Jefferson Schick\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Cálculo de traços de concreto\nResponsável: Profª Rosângela\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: A ciência do bem-estar na vida prática\nResponsável: Profª Maressa\nVagas: 4")
+        horario1.add("Evento: Oficina\nTema: Caldas no controle de pragas\nResponsável: Profª Magali\nVagas: 4")
+        horario1.add("Evento: Oficina\nTema: Montagem caseira de minhocário\nResponsável: Alunos de agroecologia\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Preparo de microrganismos eficazes\nResponsável: Alunos de agroecologia\nVagas: 8")
+        horario1.add("Evento: Oficina\nTema: Replantio de vegetais\nResponsável: Alunos de agroecologia\nVagas: FECHADO")
+        horario1.add("Evento: Oficina\nTema: Produção de cerveja artesanal (1ª parte)\nRestrição: Exclusiva para maiores de 18 anos\nResponsável: Paula Moreira, Maiara Fragoso e Professor Joel Souza\nVagas: 11")
         val horario2 = ArrayList<String>() // eventos tarde
         horario2.add("Evento: Apresentações e socialização de trabalhos e projetos desenvolvidos nas escolas municipais, estaduais e no IFSC Câmpus Canoinhas\nLocal: Auditório")
-        horario2.add("Evento: Oficina\nTema: Torre de palitos\nResponsável: Prof Manassés\nLocal: Laboratório de elétrica")
-        horario2.add("Evento: Oficina\nTema: Phyton\nResponsável: Prof Lucas\nLocal: Sala 02")
-        horario2.add("Evento: Oficina\nTema: Programação matemática\nResponsável: Prof Lucas\nLocal: Laboratório de Informática 13")
-        horario2.add("Evento: Oficina\nTema: Determinação da quantidade de sódio nos alimentos\nResponsável: Profª Joyce e Profª Priscila\nLocal: Laboratório de alimentos")
-        horario2.add("Evento: Oficina\nTema: Groma egípcia\nResponsável: Profª Daiane\nLocal: Laboratório de solos")
-        horario2.add("Evento: Oficina\nTema: Fazendo arte com matemática\nResponsável: Profª Carla\nLocal: Laboratório de informática 14")
-        horario2.add("Evento: Oficina\nTema: Produção de cerveja artesanal (2ª parte)\nRestrição: Exclusiva para maiores de 18 anos\nResponsável: Prof Joel Souza\nLocal: Sala 14 e Laboratório de panificação")
+        horario2.add("Evento: Oficina\nTema: Torre de palitos\nResponsável: Prof Manassés\nVagas: FECHADO")
+        horario2.add("Evento: Oficina\nTema: Python Para OBI (Olimpíada Brasileira de Informática)\nResponsável: Prof Lucas\nVagas: FECHADO")
+        horario2.add("Evento: Oficina\nTema: Programação matemática\nResponsável: Prof Lucas\nVagas: FECHADO")
+        horario2.add("Evento: Oficina\nTema: Determinação da quantidade de sódio nos alimentos\nResponsável: Profª Joyce e Profª Priscila\nVagas: 5")
+        horario2.add("Evento: Oficina\nTema: Groma egípcia\nResponsável: Profª Daiane\nVagas: 5")
+        horario2.add("Evento: Oficina\nTema: Fazendo arte com matemática\nResponsável: Profª Carla\nVagas: FECHADO")
+        horario2.add("Evento: Oficina\nTema: Produção de cerveja artesanal (2ª parte)\nRestrição: Exclusiva para maiores de 18 anos\nResponsável: Paula Moreira, Maiara Fragoso e Professor Joel Souza\nVagas 11")
         val horario3 = ArrayList<String>() // eventos noite
         horario3.add("Evento: Palestra\nTema: Quando a topologia encontra a física\nPalestrante: Prof. Gustavo Machado Monteiro - UNICAMP\nLocal: Auditório")
         horario3.add("Evento: Palestra\nTema: Amigo ou inimigo? O glutem na intolerância alimentar e na doença celíaca\nPalestrante: Prof. Patrícia Maria Fritsch - IFSC Câmpus Canoinhas\nLocal: Auditório")

@@ -11,7 +11,7 @@ import edu.ifsc.canoinhas.snct.snctifsccanoinhas.R
 import java.util.ArrayList
 import java.util.HashMap
 
-class PrimeiroDiaFragment : Fragment() {
+class PrimeiroDiaFragment : Fragment() {//Primeiro dia OK
 
 
     internal lateinit var listAdapter: ExpandableListAdapter
