@@ -23,7 +23,7 @@ android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="II Simpósio de Humanidades - IFSC"
+                android:text="Semana Nacional de Ciência e Tecnologia"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
@@ -36,17 +36,17 @@ android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="
-    O II Simpósio de Humanidades do IFSC Campus Canoinhas propõe o debate sobre a educação no Brasil e seus desafios para a formação de sujeitos críticos, chamando uma discussão entre o mundo do trabalho, a Sociedade Civil Organizada e as Políticas Públicas para Educação no Brasil, com ênfase nas possibilidades e nos desafios relacionados ao fortalecimento de práticas democráticas, ao desenvolvimento regional socialmente referenciado, inclusivo e de respeito à diversidade cultural, geracional, étnica, de gênero e orientação e de relações sustentáveis com o meio ambiente dentro do ambiente escolar."
+                android:text="A Semana Nacional de Ciência e Tecnologia - SNCT - foi estabelecida pelo Decreto de 9 de Junho de 2004. Ela é realizada sempre no mês de outubro sob a coordenação do MCTIC, por meio da Coordenação-Geral de Popularização e Divulgação da Ciência (CGPC/SEPED) e conta com a colaboração de secretarias estaduais e municipais, agências de fomento, espaços científico-culturais, instituições de ensino e pesquisa, sociedades científicas, escolas, órgãos governamentais, empresas de base tecnológica e entidades da sociedade civil. A SNCT tem o objetivo de aproximar a Ciência e Tecnologia da população, promovendo eventos que congregam centenas de instituições a fim de realizarem atividades de divulgação científica em todo o País"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Produção:"
+                android:text="Equipe executora:"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -57,69 +57,21 @@ android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="
-    Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Canoinhas\nNEABI, NuCA E Grupo de Pesquisa Identidade, Desenvolvimento e Democracia"
-                android:textColor="@android:color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Comissão Organizadora:"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="
-    Joel José de Souza\n
-    Mauro Antônio do Nascimento\n
-    Roberta Costa Ribeiro da Silva\n
+    Marlon Mulhbauer\n
+    Antonio Carlos Patrocinio Junior\n
+    Manasses Carlos Taques\n
     Ana Cláudia Burmester\n
-    Hendrie Ferreira Nunes\n
-    Patrícia Maccarini Moraes\n
-    Alice Felisbino Golin\n
-    Micheline Raquel de Barros\n
-    Marilde Salomon Ruppel\n
-    Vilson Cesar Schenato\n
-    Marcia Tiemy Morita Kawamoto\n
-    Rafael Mauricio Castanho\n
-    Davis Moreira Alvim\n
-    Iara Inês do Prado Gresczeschen\n
-    Osvaldo Bail\n
-    Argos Gumbowsky"
+    Mara Lucia Schroeder Tavares\n
+    Lucélia de Souza Leite\n
+    Flávio Pereira da Silva\n
+    Magali Regina\n
+    Josieli de Oliveira dos Santos Veiga\n
+    Daiana Alves Machado\n
+    Juliete Alves dos Santos Linkowski\n
+    Carla Valéria dos Santos Pacheco\n"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Instituições Parceiras:"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="
-    Universidade do Contestado (UNC),\n
-    Projeto Territórios de Cidadania (NEDET),\n
-    Sindicato dos Trabalhadores em Educação na Rede Pública de Ensino do Estado de SC (SINTE),\n
-    Sindicato dos Trabalhadores na Agricultura Familiar do Planalto Norte (SINTRAF/PN),\n
-    Gerência estadual de Educação."
-                android:textColor="@android:color/black"
-                android:textSize="15sp"
-                android:layout_marginBottom="0dp"/>
 
 
         </LinearLayout>

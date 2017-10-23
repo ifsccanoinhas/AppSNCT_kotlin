@@ -70,14 +70,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             //inicio_selecionado = true
             barra = "Início"
 
-        } else if (id == R.id.nav_palestrantes) {
-            val palestrantesFragment = PalestrantesFragment()
-            val manager = supportFragmentManager
-            manager.beginTransaction().replace(R.id.mainLayout, palestrantesFragment).commit()
-            //barra = "Palestrantes"
-            //inicio_selecionado = false
 
-        } else if (id == R.id.nav_inscricoes) {
+        }
+        else if (id == R.id.nav_apresentacao_trabalho) {
+            val apresentacaoFragment = ApresentacaoFragment()
+            val manager = supportFragmentManager
+            manager.beginTransaction().replace(R.id.mainLayout, apresentacaoFragment).commit()
+            //inicio_selecionado = true
+            //barra = "Início"
+
+        }  else if (id == R.id.nav_inscricoes) {
             val inscricoesFragment = InscricoesFragment()
             val manager = supportFragmentManager
             manager.beginTransaction().replace(R.id.mainLayout, inscricoesFragment).commit()

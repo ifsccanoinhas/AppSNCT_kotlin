@@ -11,7 +11,7 @@
         android:id="@+id/imageView3"
         android:layout_width="362dp"
         android:layout_height="144dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="40dp"
         android:padding="10dp"
         android:src="@mipmap/logosnctnovo"
         app:layout_constraintTop_toTopOf="parent"

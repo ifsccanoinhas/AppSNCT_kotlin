@@ -11,10 +11,6 @@
         <item android:title="Evento">
             <menu>
                 <item
-                    android:id="@+id/nav_palestrantes"
-                    android:icon="@drawable/ic_group_black_24dp"
-                    android:title="Palestrantes" />
-                <item
                     android:id="@+id/nav_inscricoes"
                     android:icon="@drawable/ic_person_add_black_24dp"
                     android:title="Inscrições" />
@@ -22,6 +18,10 @@
                     android:id="@+id/nav_programacao"
                     android:icon="@drawable/ic_assignment_black_24dp"
                     android:title="Programação" />
+                <item
+                    android:id="@+id/nav_apresentacao_trabalho"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="Apresentação de trabalhos" />
                 <item
                     android:id="@+id/nav_local"
                     android:icon="@drawable/ic_place_black_24dp"
