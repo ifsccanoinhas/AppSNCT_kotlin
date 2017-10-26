@@ -11,6 +11,7 @@ android:layout_height="match_parent"
     <ScrollView
         android:layout_width="match_parent"
         android:layout_marginTop="55dp"
+        android:layout_marginBottom="20dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -36,7 +37,7 @@ android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="A Semana Nacional de Ciência e Tecnologia - SNCT - foi estabelecida pelo Decreto de 9 de Junho de 2004. Ela é realizada sempre no mês de outubro sob a coordenação do MCTIC, por meio da Coordenação-Geral de Popularização e Divulgação da Ciência (CGPC/SEPED) e conta com a colaboração de secretarias estaduais e municipais, agências de fomento, espaços científico-culturais, instituições de ensino e pesquisa, sociedades científicas, escolas, órgãos governamentais, empresas de base tecnológica e entidades da sociedade civil. A SNCT tem o objetivo de aproximar a Ciência e Tecnologia da população, promovendo eventos que congregam centenas de instituições a fim de realizarem atividades de divulgação científica em todo o País"
+                android:text="A Semana Nacional de Ciência e Tecnologia - SNCT - foi estabelecida pelo Decreto de 9 de Junho de 2004. Ela é realizada sempre no mês de outubro sob a coordenação do MCTIC, por meio da Coordenação-Geral de Popularização e Divulgação da Ciência (CGPC/SEPED) e conta com a colaboração de secretarias estaduais e municipais, agências de fomento, espaços científico-culturais, instituições de ensino e pesquisa, sociedades científicas, escolas, órgãos governamentais, empresas de base tecnológica e entidades da sociedade civil. A SNCT tem o objetivo de aproximar a Ciência e Tecnologia da população, promovendo eventos que congregam centenas de instituições a fim de realizarem atividades de divulgação científica em todo o País."
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -71,7 +72,31 @@ android:layout_height="match_parent"
     Carla Valéria dos Santos Pacheco\n"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Mais informações:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Email: mara.lucia@ifsc.edu.br"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Site: canoinhas.ifsc.edu.br/snct"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
 
         </LinearLayout>
