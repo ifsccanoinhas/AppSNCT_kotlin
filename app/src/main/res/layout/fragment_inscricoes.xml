@@ -1,14 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.root.appsimposiokotlin.ProgramacaoFragment">
+    tools:context="edu.ifsc.canoinhas.snct.snctifsccanoinhas.IHC.InscricoesFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <WebView
-        android:id="@+id/webViewInscricoes"
-        android:layout_marginTop="55dp"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarInscricoes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_swipe_inscricoes"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInscricoes"
+        tools:layout_editor_absoluteX="0dp">
+
+        <WebView
+            android:id="@+id/webViewInscricoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.constraint.ConstraintLayout>

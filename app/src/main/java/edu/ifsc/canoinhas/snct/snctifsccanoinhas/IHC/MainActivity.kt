@@ -1,7 +1,6 @@
 package edu.ifsc.canoinhas.snct.snctifsccanoinhas.IHC
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -37,9 +36,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
         } else {
-            val inicioFragment = InicioFragment()
+            val telaInicialFragment = InicioFragment()
             val manager = supportFragmentManager
-            manager.beginTransaction().replace(R.id.mainLayout, inicioFragment).commit()
+            manager.beginTransaction().replace(R.id.mainLayout, telaInicialFragment).commit()
             supportActionBar!!.title = "SNCT 2017"
         }
     }
@@ -86,22 +85,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
            // barra = "Inscrições"
             // inicio_selecionado = false
 
-        }/* else if (id == R.id.nav_programacao) {
-
-            val programacaoFragment = ProgramacaoFragment()
-            val manager = supportFragmentManager
-            manager.beginTransaction().replace(R.id.mainLayout, programacaoFragment).commit()
-            barra = "Programação"
-            inicio_selecionado = false
-
-        } else if (id == R.id.nav_avalie_evento) {
-            val avalieEventoFragment = AvalieEventoFragment()
-            val manager = supportFragmentManager
-            manager.beginTransaction().replace(R.id.mainLayout, avalieEventoFragment).commit()
-            barra = "Avalie o Evento"
-            inicio_selecionado = false
-
-        }*/ else if (id == R.id.nav_sobreAplicativo) {
+        } else if (id == R.id.nav_sobreAplicativo) {
             val sobreAplicativoFragment = SobreAplicativoFragment()
             val manager = supportFragmentManager
             manager.beginTransaction().replace(R.id.mainLayout, sobreAplicativoFragment).commit()

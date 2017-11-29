@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.widget.SwipeRefreshLayout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,42 +18,80 @@ import edu.ifsc.canoinhas.snct.snctifsccanoinhas.R
  */
 class InicioFragment : Fragment() {
 
+    internal lateinit var srl_swipe : SwipeRefreshLayout
+    internal lateinit var view : View
+    internal lateinit var inicioWebView: WebView
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        var v = inflater!!.inflate(R.layout.fragment_inicio, container, false)
+                              savedInstanceState: Bundle?): View {
 
-        if (verificaConexao(v.context)) {
-            v = inflater.inflate(R.layout.fragment_inicio_internet, container, false)
-            val twitterWebView : WebView = v.findViewById(R.id.webViewTwitter)
+        view = inflater!!.inflate(R.layout.fragment_inicio, container, false)
+        srl_swipe = view.findViewById(R.id.srl_swipe)
+        inicioWebView = view.findViewById(R.id.webViewInicio)
 
-            val html = "            <a class=\"twitter-timeline\"  href=\"https://twitter.com/hashtag/SNCT\" data-widget-id=\"921086101850386432\">SNCT Tweets</a>\n" +
-                    "            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>\n" +
-                    "          "
-            twitterWebView.loadData(html, "text/html", "UTF-8")
-            val webSettings = twitterWebView.settings
-            webSettings.javaScriptEnabled = true
-            webSettings.setSupportZoom(false)
-
-            twitterWebView.webViewClient = WebViewClient()
+        if(estaConectado(view.context)){
+            chamaLayoutComConexao(inicioWebView)
+        }
+        else{
+            chamaLayoutSemConexao(inicioWebView)
         }
 
-        return v
+        srl_swipe.setOnRefreshListener(object : SwipeRefreshLayout.OnRefreshListener {
+            override fun onRefresh() {
+                if(estaConectado(view.context)){
+                    chamaLayoutComConexao(inicioWebView)
+                }
+                else{
+                    chamaLayoutSemConexao(inicioWebView)
+                }
+            }
+        })
+
+        return view
     }
 
-    fun verificaConexao(context: Context): Boolean {
-        val conectado: Boolean
+    fun estaConectado(context: Context): Boolean {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         if (connectivityManager.activeNetworkInfo != null
                 && connectivityManager.activeNetworkInfo.isAvailable
                 && connectivityManager.activeNetworkInfo.isConnected) {
-            conectado = true
+            return true
         } else {
-            conectado = false
+            return false
         }
-        return conectado
+    }
+    fun chamaLayoutComConexao(webView: WebView){
+
+        webView.loadUrl("file:///android_asset/twitter.html")
+        webView.getSettings().setJavaScriptEnabled(true)
+        webView.getSettings().setAppCacheEnabled(true)
+
+        srl_swipe.isRefreshing = true
+        webView.webViewClient = object : WebViewClient() {
+
+            override fun onPageFinished(view: WebView, url: String) {
+                srl_swipe.isRefreshing = false
+            }
+
+        }
+
+    }
+    fun chamaLayoutSemConexao(webView: WebView){
+
+
+        webView.loadUrl("file:///android_asset/inicio_sem_internet.html")
+        webView.getSettings().setJavaScriptEnabled(true)
+        webView.getSettings().setAppCacheEnabled(true)
+
+        srl_swipe.isRefreshing = true
+        webView.webViewClient = object : WebViewClient() {
+
+            override fun onPageFinished(view: WebView, url: String) {
+                srl_swipe.isRefreshing = false
+            }
+
+        }
+
     }
 
-
-
-}// Required empty public constructor
+}
