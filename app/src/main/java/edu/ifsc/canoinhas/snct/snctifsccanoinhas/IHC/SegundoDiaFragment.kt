@@ -3,6 +3,7 @@ package edu.ifsc.canoinhas.snct.snctifsccanoinhas.IHC
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ExpandableListView
@@ -33,9 +34,15 @@ class SegundoDiaFragment : Fragment() {//Segundo Dia OK
         expListView.expandGroup(0)
         expListView.expandGroup(1)
         expListView.expandGroup(2)
+
+
+        expListView.onItemClickListener
         return v
     }
 
+    override fun onContextItemSelected(item: MenuItem?): Boolean {
+        return super.onContextItemSelected(item)
+    }
     private fun prepareListData() {
         listDataHeader = ArrayList<String>()
         listDataChild = HashMap<String, List<String>>()
@@ -74,6 +81,8 @@ class SegundoDiaFragment : Fragment() {//Segundo Dia OK
         listDataChild.put(listDataHeader[0], horario1) // Header, Child data
         listDataChild.put(listDataHeader[1], horario2)
         listDataChild.put(listDataHeader[2], horario3) // Header, Child data
+
+
     }
 
 }
